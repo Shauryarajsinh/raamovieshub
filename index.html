@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Video Library</h1>
+        <input type="text" id="search" placeholder="Search for videos..." oninput="searchVideos()">
+    </header>
+
+    <div id="video-list">
+        <!-- Video items will be dynamically inserted here -->
+    </div>
+
+    <!-- Modal for Video Playback -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <video id="video-player" controls>
+                <source id="video-source" src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
